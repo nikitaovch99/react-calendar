@@ -1,0 +1,96 @@
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__month-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__right-side {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.month-switch {
+  text-align: center;
+
+  &__date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100px;
+  }
+
+  &__button {
+    border: 0px;
+    background-color: white;
+
+  }
+}
+
+.button {
+  &__image {
+    height: 9px;
+    width: 9px;
+    background-image: url('../../images/pngegg.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__image-second {
+    height: 9px;
+    width: 9px;
+    background-image: url('../../images/pngegg.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+  }
+}
+
+.date-picker {
+  margin-left: 10px;
+  background-color: white;
+  border: unset;
+  &:hover {
+    transform: scale(120%);
+  }
+
+  &__image {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/pngwing.com.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.add-event {
+  background-color: white;
+  border: unset;
+  &:hover {
+    transform: scale(120%);
+  }
+
+  &__image {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/round-add-button.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--disabled {
+    pointer-events: none;
+  }
+}

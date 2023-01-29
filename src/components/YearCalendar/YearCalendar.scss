@@ -1,0 +1,39 @@
+.modal {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 8%;
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+
+  }
+
+  .year-form {
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 80px;
+  }
+
+  &__select {
+    width: 90px;
+    height: 21px;
+
+  }
+
+
+
+}

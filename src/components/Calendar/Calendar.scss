@@ -1,0 +1,83 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  &__cell {
+    gap: 1px;
+  }
+
+  &--7-5 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  &--7-4 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.cell {
+
+  min-width: 120px;
+  height: 140px;
+
+  background-color: white;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &--current {
+    background-color: lightgreen;
+  }
+
+  &__day {
+    padding: 8px 0  0 8px;
+  }
+
+  &__week-day {
+    padding: 8px 8px 0 0;
+  }
+
+  &__event {
+    height: 100px;
+    padding: 0 8px;
+  }
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-y:auto;
+
+  &__title {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 0;
+    background-color: lightgray;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    display: block;
+    all: unset;
+    cursor: pointer;
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+}
